@@ -11,16 +11,7 @@ async function movies(url) {
         const data = await response.json()
         // console.log(data);
         movieInfo(data);
-        // card.innerHTML = '';
-
-        // if (data.Search && data.Search.length > 0) {
-        //     data.Search.forEach(media => {
-        //         const movieCard = createMovieCard(media);
-        //         // card.appendChild(movieCard);
-        //     });
-        // } else {
-        //     card.innerHTML = '<p>No movies found</p>';
-        // }
+        
     } catch (error) {
         console.log(error);
     }
